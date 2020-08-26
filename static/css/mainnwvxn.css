@@ -11123,7 +11123,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 }
 
 .icon-phone {
-  background-image: url(../img/png-sprite/96dpi/spritexayq7g.png);
+  background-image: url(../img/png-sprite/96dpi/spritenwvxn.png);
   background-position: 0px 0px;
   width: 24px;
   height: 25px;
@@ -11137,6 +11137,7 @@ html, body {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  padding-top: 114px;
 }
 
 * {
@@ -11279,6 +11280,17 @@ h3, .h3 {
   background: #fff;
   padding: 36px 0;
   font-size: 17px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 5px #424040;
+          box-shadow: 0 0 5px #424040;
+}
+
+.logo img {
+  max-width: 100%;
 }
 
 .menu {
@@ -11312,30 +11324,6 @@ h3, .h3 {
 
 .phone a:hover {
   text-decoration: underline;
-}
-
-.logos {
-  padding: 80px 0;
-}
-
-.logos-title {
-  margin-bottom: 100px;
-}
-
-.logo-item {
-  text-align: center;
-  padding: 40px;
-  opacity: 0.5;
-  -webkit-transition: all 0.2s ease-out 0s;
-  transition: all 0.2s ease-out 0s;
-}
-
-.logo-item:hover {
-  opacity: 1;
-}
-
-.logo-item img {
-  max-width: 100%;
 }
 
 .intro {
@@ -11383,6 +11371,7 @@ h3, .h3 {
   color: #050505;
   padding: 0 33px;
   margin: 0 39px;
+  display: inline-block;
 }
 
 .services {
@@ -11414,6 +11403,10 @@ h3, .h3 {
 }
 
 .videos-intro iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 641px;
+  margin: 0 auto;
   margin-top: -150px;
 }
 
@@ -11458,4 +11451,209 @@ h3, .h3 {
 
 .video-about-link a {
   color: #7E7E7E;
+}
+
+.logos {
+  padding: 80px 0;
+}
+
+.logos-title {
+  margin-bottom: 100px;
+}
+
+.logo-item {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.logo-item img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1199.98px) {
+  h2, .h2 {
+    font-size: 31px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+  }
+  .menu {
+    font-size: 15px;
+  }
+  .intro-content {
+    font-size: 31px;
+  }
+  .intro-content-slider {
+    margin: 0 12px;
+    padding: 0 12px;
+  }
+  .services {
+    min-height: 400px;
+    font-size: 17px;
+  }
+  .services-title {
+    margin-bottom: 70px;
+  }
+  .services-text {
+    line-height: 25px;
+  }
+  .call {
+    padding: 100px 0 200px 0;
+  }
+  .videos-intro {
+    margin-bottom: 80px;
+  }
+  .video-title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .video-about-link {
+    font-size: 16px;
+  }
+  .video-poster {
+    margin-bottom: 16px;
+  }
+  .logos {
+    padding: 40px 0;
+  }
+  .logos-title {
+    margin-bottom: 50px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer-logo {
+    max-width: 200px;
+  }
+  .footer-col-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .footer-col ul {
+    font-size: 16px;
+  }
+  .footer-email {
+    font-size: 17px;
+  }
+  .footer-tel {
+    font-size: 11px;
+  }
+  .footer-tel a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  h2, .h2 {
+    font-size: 22px;
+  }
+  .services-title {
+    margin-bottom: 30px;
+  }
+  .call-item {
+    margin-bottom: 10px;
+  }
+  .call-item .form-control {
+    width: 100%;
+  }
+  .call-text {
+    font-size: 13px;
+  }
+  .form-control-lg {
+    height: 48px;
+    font-size: 16px;
+  }
+  .btn-lg {
+    line-height: 1.5;
+  }
+  .call {
+    padding: 50px 0;
+  }
+  .videos {
+    padding-top: 20px;
+  }
+  .videos-intro {
+    margin-bottom: 40px;
+  }
+  .videos-intro iframe {
+    margin-top: 0;
+    max-width: 720px;
+    height: 50vw;
+  }
+  .footer-logo {
+    margin: 0 0 20px 0;
+  }
+  .footer-col {
+    margin-bottom: 30px;
+  }
+  .footer-col-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  body {
+    padding-top: 70px;
+  }
+  .hedaer {
+    padding: 14px 0;
+  }
+  .logo {
+    max-width: none;
+    width: 57px;
+    overflow: hidden;
+  }
+  .logo img {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  h2, .h2 {
+    font-size: 15px;
+  }
+  h3, .h3 {
+    font-size: 14px;
+  }
+  .call-title {
+    margin-bottom: 20px;
+  }
+  .videos-title {
+    margin-bottom: 40px;
+  }
+  .videos .h3 {
+    margin-bottom: 20px;
+  }
+  .video-box {
+    margin-bottom: 40px;
+  }
+  .video-title {
+    font-size: 14px;
+  }
+  .video-about-link {
+    font-size: 12px;
+  }
+  .logo-item {
+    padding: 0;
+    width: 150px;
+    margin: 0 auto 40px;
+  }
+  .intro-content {
+    font-size: 19px;
+  }
+  .intro-title-slider {
+    margin: 5px 0;
+    padding: 0 6px;
+  }
+  .services {
+    font-size: 14px;
+    min-height: auto;
+  }
 }

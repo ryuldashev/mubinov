@@ -15,8 +15,10 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainxayq7g.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainnwvxn.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
         <meta property="og:title" content="" />
         <meta property="og:url" content="" />
@@ -43,31 +45,31 @@
             <div class="container-fluid">
 
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
+                    <div class="col-md-3 col-auto mr-auto">
                         <div class="logo">
                             <img src="static/img/general/logo.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-none d-lg-block">
                         <nav class="menu">
                             <ul class="nav justify-content-center">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Портфолио</a>
+                                    <a href="#portfolio" class="nav-link scroll-link">Портфолио</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link">Backstage</a>
+                                    <a href="#backstage" class="nav-link scroll-link">Backstage</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link">Связаться</a>
+                                    <a href="#call" class="nav-link scroll-link">Связаться</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link">Клиенты</a>
+                                    <a href="#clients" class="nav-link scroll-link">Клиенты</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="phone float-lg-right">
+                    <div class="col-lg-3 col-auto">
+                        <div class="phone text-right">
                             <a href="tel:+99897 740 42 23"><i class="icon-phone mr-2"></i>+99897 740 42 23</a>
                         </div>
                     </div>
@@ -80,7 +82,7 @@
             <div class="intro-content d-flex align-items-center">
                 <div class="w-100">
                     <div class="container-fluid">
-                        <div class="intro-title d-flex align-items-center justify-content-center">
+                        <div class="intro-title d-md-flex align-items-center justify-content-center">
                             <div>МЫ делаем</div>
                             <div class="intro-title-slider" id="introTitleSlider">Эффективные</div>
                             <div>видеоролики</div>
@@ -104,7 +106,7 @@
 
                     <div class="services-text">
                         <div class="row text-center">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mb-4">
                                 Рекламные ролики
                                 <br>Документальные фильмы
                                 <br>Фуд-видео
@@ -121,14 +123,14 @@
             </div>
         </div>
 
-        <div class="call">
+        <div class="call" id="call">
             <div class="container">
                 <div class="call-title h2 text-center">
                     Мы свяжемся с вами
                 </div>
                 <div class="call-form">
                     <form>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-lg-flex justify-content-center">
                             <div class="call-item">
                                 <input class="call-item-name form-control form-control-lg" type="text" placeholder="имя">
                             </div>
@@ -138,7 +140,7 @@
                             <div class="call-item">
                                 <input class="call-item-phone form-control form-control-lg" type="text" placeholder="телефон/telegram">
                             </div>
-                            <div class="call-item">
+                            <div class="call-item text-center">
                                 <button class="btn btn-danger btn-lg">отправить</button>
                             </div>
                         </div>
@@ -151,10 +153,10 @@
             </div>
         </div>
 
-        <div class="videos">
+        <div class="videos" id="portfolio">
             <div class="container">
                 <div class="videos-intro">
-                    <iframe src="https://player.vimeo.com/video/382049571" width="100%" height="641" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/382049571" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
 
                 <div class="videos-title h2 text-center">
@@ -169,7 +171,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -184,7 +188,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-2.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -199,7 +205,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-2.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -214,7 +222,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -237,7 +247,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -252,7 +264,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -275,7 +289,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -290,7 +306,9 @@
                         <div class="col-lg-6">
                             <div class="video-box">
                                 <div class="video-poster">
-                                    <img src="static/img/content/video-1.jpg" alt="">
+                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
+                                        <img src="static/img/content/video-1.jpg" alt="">
+                                    </a>
                                 </div>
                                 <div class="video-info">
                                     <div class="video-title">
@@ -307,7 +325,7 @@
             </div>
         </div>
 
-        <div class="logos">
+        <div class="logos" id="clients">
             <div class="container">
                 <div class="h2 logos-title text-center">
                     наши клиенты
@@ -372,16 +390,16 @@
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#">Главная</a>
+                                    <a href="#portfolio" class="scroll-link">Портфолио</a>
                                 </li>
                                 <li>
-                                    <a href="#">портфолио</a>
+                                    <a href="#backstage" class="scroll-link">Backstage</a>
                                 </li>
                                 <li>
-                                    <a href="#">Backstage</a>
+                                    <a href="#call" class="scroll-link">Связаться</a>
                                 </li>
                                 <li>
-                                    <a href="#">Клиенты</a>
+                                    <a href="#clients" class="scroll-link">Клиенты</a>
                                 </li>
                             </ul>
                         </div>
@@ -411,7 +429,9 @@
 
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="static/js/mainxayq7g.min.js"></script>
+        <script src="static/js/mainnwvxn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     </body>
 
 </html>

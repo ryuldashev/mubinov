@@ -6170,79 +6170,90 @@ $(document).ready(function () {
     var video = $('#introVideo');
     video.muted = true;
 
+    $(".scroll-link").click(function (e) {
+        e.preventDefault();
 
-    var CharTimeout = 50; // скорость печатания
-    var StoryTimeout = 2000; // время ожидания перед переключением
+        $('html, body').animate({
+            scrollTop: $(e.currentTarget.hash).offset().top - 114
+        }, 500);
+    });
 
-    var Summaries = new Array();
-    var SiteLinks = new Array();
 
-    Summaries[0] = 'Эффективные';
-    SiteLinks[0] = 'http://wp-kama.ru/?p=4015';
-    Summaries[1] = 'Креативное';
-    SiteLinks[1] = 'http://wp-kama.ru/?p=4015';
-    Summaries[2] = 'Хорошее';
-    SiteLinks[2] = 'http://wp-kama.ru/?p=4015';
+    function ticker() {
+        var CharTimeout = 50; // скорость печатания
+        var StoryTimeout = 2000; // время ожидания перед переключением
 
-    /* Печатание текста - Тиккер
-    ----------------------------------------------------------------
-    var CharTimeout = 20;
-    var StoryTimeout = 7000;
-    var Summaries = new Array();
-    var SiteLinks = new Array();
-        Summaries[0] = "CMS для простых сайтов GetSimple на русском языке";
-        SiteLinks[0] = "#link1";
-        Summaries[1] = "Spectrum - шикарная тема для WordPress на русском языке";
-        SiteLinks[1] = "#link2";
-    startTicker();
-    */
+        var Summaries = new Array();
+        var SiteLinks = new Array();
 
-    function startTicker() {
-        massiveItemCount = Number(Summaries.length); //количество элементов массива
-        // Определяем значения запуска
-        CurrentStory = -1;
-        CurrentLength = 0;
-        // Расположение объекта
-        AnchorObject = document.getElementById("introTitleSlider");
-        runTheTicker();
-    }
+        Summaries[0] = 'Эффективные';
+        SiteLinks[0] = 'http://wp-kama.ru/?p=4015';
+        Summaries[1] = 'Креативное';
+        SiteLinks[1] = 'http://wp-kama.ru/?p=4015';
+        Summaries[2] = 'Хорошее';
+        SiteLinks[2] = 'http://wp-kama.ru/?p=4015';
 
-    // Основной цикл тиккера
-    function runTheTicker() {
-        var myTimeout;
-        // Переход к следующему элементу
-        if (CurrentLength == 0) {
-            CurrentStory++;
-            CurrentStory = CurrentStory % massiveItemCount;
-            StorySummary = Summaries[CurrentStory].replace(/"/g, '-');
-            AnchorObject.href = SiteLinks[CurrentStory];
-        }
-        // Располагаем текущий текст в анкор с печатанием
-        AnchorObject.innerHTML = StorySummary.substring(0, CurrentLength) + znak();
-        // Преобразуем длину для подстроки и определяем таймер
-        if (CurrentLength != StorySummary.length) {
-            CurrentLength++;
-            myTimeout = CharTimeout;
-        } else {
+        /* Печатание текста - Тиккер
+        ----------------------------------------------------------------
+        var CharTimeout = 20;
+        var StoryTimeout = 7000;
+        var Summaries = new Array();
+        var SiteLinks = new Array();
+            Summaries[0] = "CMS для простых сайтов GetSimple на русском языке";
+            SiteLinks[0] = "#link1";
+            Summaries[1] = "Spectrum - шикарная тема для WordPress на русском языке";
+            SiteLinks[1] = "#link2";
+        startTicker();
+        */
+
+        function startTicker() {
+            massiveItemCount = Number(Summaries.length); //количество элементов массива
+            // Определяем значения запуска
+            CurrentStory = -1;
             CurrentLength = 0;
-            myTimeout = StoryTimeout;
-        }
-        // Повторяем цикл с учетом задержки
-        setTimeout(function () {
+            // Расположение объекта
+            AnchorObject = document.getElementById("introTitleSlider");
             runTheTicker();
-        }, myTimeout);
+        }
+
+        // Основной цикл тиккера
+        function runTheTicker() {
+            var myTimeout;
+            // Переход к следующему элементу
+            if (CurrentLength == 0) {
+                CurrentStory++;
+                CurrentStory = CurrentStory % massiveItemCount;
+                StorySummary = Summaries[CurrentStory].replace(/"/g, '-');
+                AnchorObject.href = SiteLinks[CurrentStory];
+            }
+            // Располагаем текущий текст в анкор с печатанием
+            AnchorObject.innerHTML = StorySummary.substring(0, CurrentLength) + znak();
+            // Преобразуем длину для подстроки и определяем таймер
+            if (CurrentLength != StorySummary.length) {
+                CurrentLength++;
+                myTimeout = CharTimeout;
+            } else {
+                CurrentLength = 0;
+                myTimeout = StoryTimeout;
+            }
+            // Повторяем цикл с учетом задержки
+            setTimeout(function () {
+                runTheTicker();
+            }, myTimeout);
+        }
+
+        // Генератор подстановки знака
+        function znak() {
+            if (CurrentLength == StorySummary.length) return "";
+            else return "|";
+        }
+
+        startTicker();
     }
 
-    // Генератор подстановки знака
-    function znak() {
-        if (CurrentLength == StorySummary.length) return "";
-        else return "|";
-    }
-
-    startTicker();
+    ticker();
 
 });
-
 
 
 

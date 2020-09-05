@@ -84,7 +84,7 @@
                     <div class="container-fluid">
                         <div class="intro-title d-md-flex align-items-center justify-content-center">
                             <div>{{ page.intro_header_left }}</div>
-                            <div class="intro-title-slider" id="introTitleSlider">{{ page.objectives.0 }}</div>
+                            <div class="intro-title-slider" id="introTitleSlider">{{ page.objectives | first }}</div>
                             <div>{{ page.intro_header_right }}</div>
                         </div>
                     </div>
@@ -209,47 +209,13 @@
                     {{ page.clients_title }}
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-1.png" alt="">
+                    {% for client in site.clients %}
+                        <div class="col-lg-3">
+                            <div class="logo-item">
+                                <img src="{{ client.image }}" alt="{{ client.title }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-4.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="logo-item">
-                            <img src="static/img/content/logo-8.png" alt="">
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

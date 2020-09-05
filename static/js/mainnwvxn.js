@@ -6188,9 +6188,9 @@ $(document).ready(function () {
 
         Summaries[0] = 'Эффективные';
         SiteLinks[0] = 'http://wp-kama.ru/?p=4015';
-        Summaries[1] = 'Креативное';
+        Summaries[1] = 'Креативные';
         SiteLinks[1] = 'http://wp-kama.ru/?p=4015';
-        Summaries[2] = 'Хорошее';
+        Summaries[2] = 'Хорошие';
         SiteLinks[2] = 'http://wp-kama.ru/?p=4015';
 
         /* Печатание текста - Тиккер

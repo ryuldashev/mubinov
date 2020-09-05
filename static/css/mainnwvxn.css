@@ -11444,6 +11444,10 @@ h3, .h3 {
   text-overflow: ellipsis;
 }
 
+.video-content {
+  color: #7E7E7E;
+}
+
 .video-about-link {
   font-size: 22px;
   text-transform: uppercase;

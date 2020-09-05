@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainnwvxn.css?23" rel="stylesheet" type="text/css">
+        <link href="static/css/mainnwvxn.css?25" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -183,10 +183,15 @@
                                             <div class="video-title">
                                                 {{ post.title }}
                                             </div>
-                                            {% if post.case_link %}
-                                            <div class="video-about-link">
-                                                <a href="{{ post.case_link }}">о проекте</a>
+                                            {% if post.content %}
+                                            <div class="video-content">
+                                                {{ post.content }}
                                             </div>
+                                            {% endif %}
+                                            {% if post.case_link %}
+                                                <div class="video-about-link">
+                                                    <a href="{{ post.case_link }}">о проекте</a>
+                                                </div>
                                             {% endif %}
                                         </div>
                                     </div>

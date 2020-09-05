@@ -3,9 +3,9 @@ name: default
 
 steps:
 - name: build
-  image: flortsch/ruby-native
+  image: jekyll/jekyll:latest
   commands:
-  - bundle install --deployment
+  - bundle install
   - bundle exec jekyll build
 
 - name: deploy
@@ -16,7 +16,7 @@ steps:
     FTP_PASSWORD:
       from_secret: password
     PLUGIN_HOSTNAME: 62.209.128.109:21
-    PLUGIN_SRC_DIR: ./_site
+    PLUGIN_SRC_DIR: _site
     PLUGIN_SECURE: false
     PLUGIN_VERIFY: false
     PLUGIN_EXCLUDE: ^\.git/$

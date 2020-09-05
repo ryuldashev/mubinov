@@ -164,171 +164,37 @@
                 </div>
 
                 {% for category in site.categories %}
-                    {{ category.title }}
-                    {% for post in category.posts %}
-                        {{ post.title }}
-                    {% endfor %}
+                    {% assign category_object = category[0] %}
+
+                    <div class="videos-section">
+                        <div class="h3 text-center">
+                            {{ category_object }}
+                        </div>
+                        <div class="row">
+                            {% for post in site.categories[category_object] %}
+                                <div class="col-lg-6">
+                                    <div class="video-box">
+                                        <div class="video-poster">
+                                            <a data-fancybox data-ratio="2" href="{{ post.vimeo_link }}">
+                                                <img src="{{ post.image }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="video-info">
+                                            <div class="video-title">
+                                                {{ post.title }}
+                                            </div>
+                                            {% if post.case_link %}
+                                            <div class="video-about-link">
+                                                <a href="{{ post.case_link }}">о проекте</a>
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 {% endfor %}
-
-                <div class="videos-section">
-                    <div class="h3 text-center">
-                        Реклама
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Mirabad avenue — Commercial
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Super delivery by yapona mama
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        No stress by fides
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Non elementum eget.
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="videos-section">
-                    <div class="h3 text-center">
-                        Музыкальные клипы
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Mirabad avenue — Commercial
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Super delivery by yapona mama
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="videos-section">
-                    <div class="h3 text-center">
-                        Backstage
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Mirabad avenue — Commercial
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="video-box">
-                                <div class="video-poster">
-                                    <a data-fancybox data-ratio="2" href="https://vimeo.com/382049571">
-                                        <img src="static/img/content/video-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="video-info">
-                                    <div class="video-title">
-                                        Super delivery by yapona mama
-                                    </div>
-                                    <div class="video-about-link">
-                                        <a href="#">о проекте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

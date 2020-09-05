@@ -1,6 +1,6 @@
 ---
 title: Damir Mubinov Movies
-timezone: GMT+5
+timezone: UTC
 collections:
   posts:
     title: Posts

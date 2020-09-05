@@ -1,10 +1,11 @@
 ---
 title: MIRABAD AVENUE — COMMERCIAL
-date: 2020-09-05
-category: реклама
+date: 2020-09-05 00:00:00 Z
+categories:
+- реклама
 case_link: 
 vimeo_link: https://vimeo.com/382049571
-image: /uploads/video-1.jpg
+image: "/uploads/video-1.jpg"
 ---
 
 текстовое описание если вдруг хочется

@@ -6182,16 +6182,7 @@ $(document).ready(function () {
     function ticker() {
         var CharTimeout = 50; // скорость печатания
         var StoryTimeout = 2000; // время ожидания перед переключением
-
-        var Summaries = new Array();
         var SiteLinks = new Array();
-
-        Summaries[0] = 'Эффективные';
-        SiteLinks[0] = 'http://wp-kama.ru/?p=4015';
-        Summaries[1] = 'Креативные';
-        SiteLinks[1] = 'http://wp-kama.ru/?p=4015';
-        Summaries[2] = 'Хорошие';
-        SiteLinks[2] = 'http://wp-kama.ru/?p=4015';
 
         /* Печатание текста - Тиккер
         ----------------------------------------------------------------

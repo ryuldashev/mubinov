@@ -83,17 +83,18 @@
                 <div class="w-100">
                     <div class="container-fluid">
                         <div class="intro-title d-md-flex align-items-center justify-content-center">
-                            <div>МЫ делаем</div>
-                            <div class="intro-title-slider" id="introTitleSlider">Эффективные</div>
-                            <div>видеоролики</div>
+                            <div>{{ page.intro_header_left }}</div>
+                            <div class="intro-title-slider" id="introTitleSlider">{{ page.objectives.0 }}</div>
+                            <div>{{ page.intro_header_right }}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <video id="introVideo" width="100%" poster="static/img/general/video-poster.png" preload="auto" autoplay="true" muted webkit-playsinline playsinline loop="true">
-                <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
+
                 <source src="static/img/general/videocover.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    <!-- <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>             -->
+                <!-- <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+                <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
             </video>
         </div>
 
@@ -101,21 +102,20 @@
             <div class="w-100">
                 <div class="container">
                     <div class="services-title h2 text-center">
-                        Видеопродакшн в узбекистане
+                        {{ page.main_title }}
                     </div>
 
                     <div class="services-text">
                         <div class="row text-center">
                             <div class="col-lg-6 mb-4">
-                                Рекламные ролики
-                                <br>Документальные фильмы
-                                <br>Фуд-видео
+                                {% for service in page.services_left %}
+                                    {{ service }}<br>
+                                {% endfor %}
                             </div>
                             <div class="col-lg-6">
-                                Музыкальные клипы
-                                <br>Презентационные фильмы
-                                <br>Обучающий контент
-                                <br>Production service
+                                {% for service in page.services_right %}
+                                    {{ service }}<br>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
         <div class="call" id="call">
             <div class="container">
                 <div class="call-title h2 text-center">
-                    Мы свяжемся с вами
+                    {{ page.contact_title }}
                 </div>
                 <div class="call-form">
                     <form>
@@ -148,7 +148,7 @@
                 </div>
 
                 <div class="call-text">
-                    оставьте свои контакты, и мы проконсультируем вас в удобной для вас форме
+                    {{ page.contact_description }}
                 </div>
             </div>
         </div>
@@ -156,12 +156,19 @@
         <div class="videos" id="portfolio">
             <div class="container">
                 <div class="videos-intro">
-                    <iframe src="https://player.vimeo.com/video/382049571" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="{{ page.showreel_url }}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
 
                 <div class="videos-title h2 text-center">
-                    Наши работы
+                    {{ page.works_title }}
                 </div>
+
+                {% for category in site.categories %}
+                    {{ category.title }}
+                    {% for post in category.posts %}
+                        {{ post.title }}
+                    {% endfor %}
+                {% endfor %}
 
                 <div class="videos-section">
                     <div class="h3 text-center">
@@ -378,7 +385,7 @@
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4">w
                         <div class="footer-logo">
                             <img src="static/img/general/logo-white.png" alt="">
                         </div>
@@ -411,12 +418,12 @@
                             </div>
 
                             <div class="footer-email">
-                                <a href="#">mubinovmovies@gmail.com</a>
+                                <a href="#">{{ page.email }}</a>
                             </div>
 
                             <div class="footer-tel">
                                 <div>
-                                    <a href="tel:+99897 740 42 23">+99897 740 42 23</a>
+                                    <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
                                 </div>
                                 (calls / telegram / whatsapp)
                             </div>
@@ -427,9 +434,14 @@
         </div>
 
 
-
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="static/js/mainnwvxn.min.js"></script>
+        <script>
+            var Summaries = new Array();
+            {% for objective in page.objectives %}
+                Summaries.push("{{ objective }}");
+            {% endfor %}
+        </script>
+        <script src="static/js/mainnwvxn.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     </body>

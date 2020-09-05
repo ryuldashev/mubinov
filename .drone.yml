@@ -21,6 +21,6 @@ steps:
     PLUGIN_EXCLUDE: ^\.git/$
   when:
     branch:
-    - develop
+    - master
     event:
     - push

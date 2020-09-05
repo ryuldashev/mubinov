@@ -2,11 +2,31 @@ kind: pipeline
 name: default
 
 steps:
+- name: restore-cache
+  image: drillster/drone-volume-cache
+  volumes:
+  - name: cache
+    path: /cache
+  settings:
+    restore: true
+    mount:
+    - vendor
+
 - name: build
   image: flortsch/ruby-native
   commands:
   - bundle install --deployment
   - bundle exec jekyll build
+
+- name: rebuild-cache
+  image: drillster/drone-volume-cache
+  volumes:
+  - name: cache
+    path: /cache
+  settings:
+    rebuild: true
+    mount:
+    - vendor
 
 - name: deploy
   image: cschlosser/drone-ftps
@@ -16,6 +36,7 @@ steps:
     FTP_PASSWORD:
       from_secret: password
     PLUGIN_HOSTNAME: 62.209.128.109:21
+    PLUGIN_SRC_DIR: ./_site
     PLUGIN_SECURE: false
     PLUGIN_VERIFY: false
     PLUGIN_EXCLUDE: ^\.git/$
@@ -24,3 +45,9 @@ steps:
     - master
     event:
     - push
+
+volumes:
+- name: cache
+  host:
+    path: /var/lib/drone/temp
+  

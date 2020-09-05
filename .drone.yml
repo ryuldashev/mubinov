@@ -9,21 +9,6 @@ steps:
   - bundle exec jekyll build
 
 - name: deploy
-  image: drillster/drone-rsync
-  settings:
-    hosts: [ "lafl-server.florian-latifi.at" ]
-    user: jekyll-blog
-    source: _site
-    target: /var/www/jekyll-blog/
-    recursive: true
-    delete: true
-    key:
-      from_secret: ssh_key
-  when:
-    branch:
-    - master
-
-- name: deploy
   image: cschlosser/drone-ftps
   environment:
     FTP_USERNAME:

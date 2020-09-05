@@ -8,6 +8,7 @@ objectives:
 - эффективные
 - креативные
 - хорошие
+- продающие
 intro_header_right: видеоролики
 services_left:
 - Рекламные ролики

@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Damir Mubinov Movies</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
+        <title>{{ page.title }}</title>
+        <meta content="{{ meta_description }}" name="description">
+        <meta content="{{ meta_keywords }}" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta content="telephone=no" name="format-detection">
@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainnwvxn.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainnwvxn.css?23" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -41,7 +41,7 @@
 
 
 
-        <div class="hedaer">
+        <div class="header">
             <div class="container-fluid">
 
                 <div class="row align-items-center">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-lg-3 col-auto">
                         <div class="phone text-right">
-                            <a href="tel:+99897 740 42 23"><i class="icon-phone mr-2"></i>+99897 740 42 23</a>
+                            <a href="tel:{{ page.phone }}"><i class="icon-phone mr-2"></i>{{ page.phone }}</a>
                         </div>
                     </div>
                 </div>

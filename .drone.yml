@@ -1,0 +1,41 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: flortsch/ruby-native
+  commands:
+  - bundle install --deployment
+  - bundle exec jekyll build
+
+- name: deploy
+  image: drillster/drone-rsync
+  settings:
+    hosts: [ "lafl-server.florian-latifi.at" ]
+    user: jekyll-blog
+    source: _site
+    target: /var/www/jekyll-blog/
+    recursive: true
+    delete: true
+    key:
+      from_secret: ssh_key
+  when:
+    branch:
+    - master
+
+- name: deploy
+  image: cschlosser/drone-ftps
+  environment:
+    FTP_USERNAME:
+      from_secret: username
+    FTP_PASSWORD:
+      from_secret: password
+    PLUGIN_HOSTNAME: 62.209.128.109:21
+    PLUGIN_SECURE: false
+    PLUGIN_VERIFY: false
+    PLUGIN_EXCLUDE: ^\.git/$
+  when:
+    branch:
+    - develop
+    event:
+    - push

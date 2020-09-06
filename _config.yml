@@ -8,11 +8,11 @@ collections:
   posts:
     title: Posts
     output: true
+  slides:
+    title: Slides
+    output: false
   uploads:
     title: Uploads
-    output: true
-  slides:
-    title: slides
     output: true
 email: your-email@example.com
 description: Write an awesome description for your new site here. You can edit this

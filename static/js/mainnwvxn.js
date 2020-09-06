@@ -6178,6 +6178,32 @@ $(document).ready(function () {
         }, 500);
     });
 
+    function changeSlide(index) {
+        console.log(index);
+        $('.slider-item.active').addClass('blackout');
+        setTimeout(function(){
+            $('.slider-item.active').removeClass('active').removeClass('blackout');
+            $('.slider-item').eq(index).addClass('active');
+        }, 500);
+    }
+
+    $('.slide-next').click(function(e) {
+        var index = $('.slider-item').index($('.slider-item').first());
+        console.log(111, index);
+        if ($('.slider-item.active').next().length) {
+            index = $('.slider-item').index($('.slider-item.active').next());
+            console.log(222, index);
+        }
+        changeSlide(index);
+    });
+
+    $('.slide-prev').click(function(e) {
+        var index = $('.slider-item').index($('.slider-item').last());
+        if ($('.slider-item.active').prev().length) {
+            index = $('.slider-item').index($('.slider-item.active').prev())
+        }
+        changeSlide(index);
+    });
 
     function ticker() {
         var CharTimeout = 50; // скорость печатания

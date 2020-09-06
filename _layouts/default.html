@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainnwvxn.css?25" rel="stylesheet" type="text/css">
+        <link href="/static/css/mainnwvxn.css?28" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -39,28 +39,23 @@
 
     <body>
 
-
-
         <div class="header">
             <div class="container-fluid">
 
                 <div class="row align-items-center">
                     <div class="col-md-3 col-auto mr-auto">
                         <div class="logo">
-                            <img src="static/img/general/logo.png" alt="">
+                            <img src="/static/img/general/logo-white.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 d-none d-lg-block">
                         <nav class="menu">
                             <ul class="nav justify-content-center">
-                                <li class="nav-item">
-                                    <a href="#portfolio" class="nav-link scroll-link">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="#backstage" class="nav-link scroll-link">Backstage</a>
-                                </li>
                                 <li>
                                     <a href="#call" class="nav-link scroll-link">Связаться</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#portfolio" class="nav-link scroll-link">Портфолио</a>
                                 </li>
                                 <li>
                                     <a href="#clients" class="nav-link scroll-link">Клиенты</a>
@@ -70,7 +65,7 @@
                     </div>
                     <div class="col-lg-3 col-auto">
                         <div class="phone text-right">
-                            <a href="tel:{{ page.phone }}"><i class="icon-phone mr-2"></i>{{ page.phone }}</a>
+                            <a href="{{ page.tg_link }}"><i class="icon-social icon-telegram mr-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -90,9 +85,9 @@
                     </div>
                 </div>
             </div>
-            <video id="introVideo" width="100%" poster="static/img/general/video-poster.png" preload="auto" autoplay="true" muted webkit-playsinline playsinline loop="true">
+            <video id="introVideo" width="100%" poster="/static/img/general/video-poster.png" preload="auto" autoplay="true" muted webkit-playsinline playsinline loop="true">
 
-                <source src="static/img/general/videocover.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="/static/img/general/videocover.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                 <!-- <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
                 <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
             </video>
@@ -101,8 +96,11 @@
         <div class="services d-flex align-items-center">
             <div class="w-100">
                 <div class="container">
-                    <div class="services-title h2 text-center">
+                    <div class="h2 text-center">
                         {{ page.main_title }}
+                    </div>
+                    <div class="services-title h5 text-center">
+                        {{ page.main_sub_title }}
                     </div>
 
                     <div class="services-text">
@@ -149,6 +147,10 @@
 
                 <div class="call-text">
                     {{ page.contact_description }}
+                </div>
+
+                <div class="call-text call-link">
+                    <a href="{{ page.tg_link }}">Написать в телеграмм</a>
                 </div>
             </div>
         </div>
@@ -222,25 +224,22 @@
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4">w
+                    <div class="col-lg-3">
                         <div class="footer-logo">
-                            <img src="static/img/general/logo-white.png" alt="">
+                            <img src="/static/img/general/logo-white.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="footer-col">
                             <div class="footer-col-title">
                                 навигация
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#portfolio" class="scroll-link">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="#backstage" class="scroll-link">Backstage</a>
-                                </li>
-                                <li>
                                     <a href="#call" class="scroll-link">Связаться</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio" class="scroll-link">Портфолио</a>
                                 </li>
                                 <li>
                                     <a href="#clients" class="scroll-link">Клиенты</a>
@@ -248,7 +247,21 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
+                        <div class="footer-col">
+                            <div class="footer-col-title">
+                                Социальные сети
+                            </div>
+
+                            <ul class="social-links">
+                                <li><a href="{{ page.vimeo_link }}" class="icon-social icon-vimeo"></a></li>
+                                <li><a href="{{ page.youtube_link }}" class="icon-social icon-youtube"></a></li>
+                                <li><a href="{{ page.instagram_link }}" class="icon-social icon-instagram"></a></li>
+                                <li><a href="{{ page.tg_link }}" class="icon-social icon-telegram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
                         <div class="footer-col">
                             <div class="footer-col-title">
                                 Контакты
@@ -278,7 +291,7 @@
                 Summaries.push("{{ objective }}");
             {% endfor %}
         </script>
-        <script src="static/js/mainnwvxn.js"></script>
+        <script src="/static/js/mainnwvxn.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     </body>

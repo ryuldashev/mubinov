@@ -1,10 +1,10 @@
 ---
 title: Damir Mubinov Movies
 phone: "+99897 740 42 23"
-vimeo_link: https://t.me/damir_mubinov 
-youtube_link: https://t.me/damir_mubinov 
-instagram_link: https://t.me/damir_mubinov 
-tg_link: https://t.me/damir_mubinov 
+vimeo_link: https://t.me/damir_mubinov
+youtube_link: https://t.me/damir_mubinov
+instagram_link: https://t.me/damir_mubinov
+tg_link: https://t.me/damir_mubinov
 email: mubinovmovies@gmail.com
 main_title: Видеопродакшн в Узбекистане
 main_sub_title: Решаем бизнес-задачи с помощью видео

@@ -11212,11 +11212,11 @@ h3, .h3 {
 }
 
 .footer-logo img {
-  max-width: 100%;
+  max-width: 200px;
 }
 
 .footer-email {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -11233,15 +11233,15 @@ h3, .h3 {
 
 .footer-tel a {
   color: #fff;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .footer-col-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #fff;
 }
 
@@ -11249,7 +11249,7 @@ h3, .h3 {
   margin: 0;
   list-style: none;
   padding: 0;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -11318,7 +11318,7 @@ h3, .h3 {
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 220px;
 }
 
 .menu {
@@ -11427,7 +11427,7 @@ h3, .h3 {
 .slider {
   position: relative;
   background: #000;
-  height: 500px;
+  height: 60vh;
 }
 .slide-prev,
 .slide-next {
@@ -11455,7 +11455,7 @@ h3, .h3 {
   display: none;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 500px;
+  height: 60vh;
   color: #fff;
   padding: 40px 0;
   font-size: 20px;
@@ -11575,6 +11575,9 @@ h3, .h3 {
   h3, .h3 {
     font-size: 22px;
   }
+  h5, .h5 {
+    font-size: 16px;
+  }
   .menu {
     font-size: 15px;
   }
@@ -11690,28 +11693,20 @@ h3, .h3 {
 }
 
 @media screen and (max-width: 767.98px) {
-  body {
-    padding-top: 70px;
-  }
   .header {
-    padding: 14px 0;
-  }
-  .logo {
-    max-width: none;
-    width: 57px;
-    overflow: hidden;
-  }
-  .logo img {
-    max-width: none;
+    padding: 15px 0;
   }
 }
 
 @media screen and (max-width: 575.98px) {
   h2, .h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   h3, .h3 {
     font-size: 14px;
+  }
+  h5, .h5 {
+    font-size: 12px;
   }
   .call-title {
     margin-bottom: 20px;

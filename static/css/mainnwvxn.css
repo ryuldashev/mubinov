@@ -11427,7 +11427,11 @@ h3, .h3 {
 .slider {
   position: relative;
   background: #000;
-  height: 60vh;
+}
+
+.slider,
+.slider-item {
+  height: 35vw;
 }
 .slide-prev,
 .slide-next {
@@ -11435,7 +11439,7 @@ h3, .h3 {
   width: 20px;
   height: 40px;
   top: calc(50% - 20px);
-  left: 1em;
+  left: 0.7em;
   background-size: 100%, 100%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -11443,7 +11447,7 @@ h3, .h3 {
 }
 .slide-next {
   left: auto;
-  right: 1em;
+  right: 0.7em;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iODkiIHZpZXdCb3g9IjAgMCA0NSA4OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggb3BhY2l0eT0iMC40OSIgZD0iTTYuNzM4MTcgODguNDc2NUM1LjI3NTg4IDg4LjQ3OTQgMy44NTg3NSA4Ny45NzAxIDIuNzMyNzkgODcuMDM3MUMyLjA5OTA3IDg2LjUxMTcgMS41NzUyMyA4NS44NjY0IDEuMTkxMjcgODUuMTM4M0MwLjgwNzMwMiA4NC40MTAxIDAuNTcwNzU4IDgzLjYxMzQgMC40OTUxODIgODIuNzkzN0MwLjQxOTYwNiA4MS45NzQgMC41MDY0ODYgODEuMTQ3NCAwLjc1MDg0MiA4MC4zNjEzQzAuOTk1MTk4IDc5LjU3NTMgMS4zOTIyMyA3OC44NDUxIDEuOTE5MiA3OC4yMTI3TDI5Ljk1NjkgNDQuNjY3NkwyLjkyMDU1IDExLjA2QzIuNDAwNjkgMTAuNDE5OCAyLjAxMjQ3IDkuNjgzMjIgMS43NzgyIDguODkyNTRDMS41NDM5NCA4LjEwMTg1IDEuNDY4MjUgNy4yNzI2NyAxLjU1NTQ5IDYuNDUyNjRDMS42NDI3MyA1LjYzMjYxIDEuODkxMTcgNC44Mzc5IDIuMjg2NTMgNC4xMTQyQzIuNjgxOSAzLjM5MDUgMy4yMTY0IDIuNzUyMDcgMy44NTkzMSAyLjIzNTYxQzQuNTA2ODQgMS42NjU4NyA1LjI2NTE0IDEuMjM2MTIgNi4wODY2NCAwLjk3MzMzM0M2LjkwODEzIDAuNzEwNTQ4IDcuNzc1MDggMC42MjA0MDQgOC42MzMwNiAwLjcwODU1M0M5LjQ5MTA0IDAuNzk2NzAyIDEwLjMyMTUgMS4wNjEyNCAxMS4wNzI0IDEuNDg1NThDMTEuODIzMyAxLjkwOTkxIDEyLjQ3ODQgMi40ODQ4NyAxMi45OTY2IDMuMTc0MzdMNDMuMjI0NyA0MC43MjQ4QzQ0LjE0NTIgNDEuODQ0NyA0NC42NDg0IDQzLjI0OTMgNDQuNjQ4NCA0NC42OTg5QzQ0LjY0ODQgNDYuMTQ4NSA0NC4xNDUyIDQ3LjU1MzIgNDMuMjI0NyA0OC42NzNMMTEuOTMyNyA4Ni4yMjM1QzExLjMwNDggODYuOTgwOSAxMC41MDczIDg3LjU3OTYgOS42MDQ3NyA4Ny45NzFDOC43MDIyNSA4OC4zNjI1IDcuNzIwMTYgODguNTM1NyA2LjczODE3IDg4LjQ3NjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K");
 }
 .slide-prev:hover,
@@ -11453,9 +11457,10 @@ h3, .h3 {
 
 .slider-item {
   display: none;
+  background-color: black;
   background-repeat: no-repeat;
-  background-position: center top;
-  height: 60vh;
+  background-position: 50% 50%;
+  background-size: 100% auto;
   color: #fff;
   padding: 40px 0;
   font-size: 20px;
@@ -11652,7 +11657,7 @@ h3, .h3 {
     margin-bottom: 30px;
   }
   .call-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .call-item .form-control {
     width: 100%;
@@ -11699,6 +11704,27 @@ h3, .h3 {
 
   .intro video {
     min-height: 50vh;
+  }
+  .slider-item .content {
+    width: 80%;
+    bottom: 1em;
+  }
+  .slider .text {
+    font-size: 11px;
+  }
+
+  .call-text {
+    font-size: 12px;
+  }
+  .form-control-lg {
+    height: 35px;
+    font-size: 13px;
+  }
+  .btn-lg {
+    line-height: 1.3em;
+  }
+  .btn {
+    font-size: 16px;
   }
 }
 

@@ -11146,7 +11146,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 }
 
 .icon-telegram {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAzNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM0Ljk0MDMgMi42OTEyNEwyOS42OTg3IDIzLjczNThDMjkuMzAzMiAyNS4yMjExIDI4LjI3MTkgMjUuNTkwOCAyNi44MDY0IDI0Ljg5MUwxOC44MTk5IDE5Ljg4MDdMMTQuOTY2MSAyMy4wMzYxQzE0LjUzOTcgMjMuMzk5MiAxNC4xODMgMjMuNzAyOCAxMy4zNjExIDIzLjcwMjhMMTMuOTM0OSAxNi43NzgyTDI4LjczNzIgNS4zOTExM0MyOS4zODA4IDQuOTAyNjQgMjguNTk3NiA0LjYzMTk5IDI3LjczNjkgNS4xMjA0OEw5LjQzNzU4IDE0LjkyOTlMMS41NTk1NiAxMi44MzA3Qy0wLjE1NDA2MiAxMi4zNzUyIC0wLjE4NTA3OCAxMS4zNzE4IDEuOTE2MjQgMTAuNjcyMUwzMi43MzA1IDAuNTY1NjU3QzM0LjE1NzIgMC4xMTAxNzUgMzUuNDA1NiAwLjgzNjMwNiAzNC45NDAzIDIuNjkxMjRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzciIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzNyAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM2Ljg2NzEgMy4xMjcwNUwzMS4zMTAyIDI5LjY5MDVDMzAuODkxIDMxLjU2NTMgMjkuNzk3NyAzMi4wMzE5IDI4LjI0NCAzMS4xNDg3TDE5Ljc3NzEgMjQuODI0NEwxNS42OTE3IDI4LjgwNzNDMTUuMjM5NSAyOS4yNjU2IDE0Ljg2MTQgMjkuNjQ4OCAxMy45OTAxIDI5LjY0ODhMMTQuNTk4NCAyMC45MDgyTDMwLjI5MDkgNi41MzQ5N0MzMC45NzMyIDUuOTE4MzggMzAuMTQyOSA1LjU3Njc1IDI5LjIzMDUgNi4xOTMzNUw5LjgzMDYgMTguNTc1MkwxLjQ3ODc4IDE1LjkyNTVDLTAuMzM3OTAyIDE1LjM1MDYgLTAuMzcwNzgzIDE0LjA4NDEgMS44NTY5MSAxMy4yMDA4TDM0LjUyNDMgMC40NDQwNEMzNi4wMzY5IC0wLjEzMDg5IDM3LjM2MDMgMC43ODU2NjUgMzYuODY3MSAzLjEyNzA1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
   width: 28px;
   background-size: 28px, 25px;
 }
@@ -11344,6 +11344,9 @@ h3, .h3 {
 
 .phone {
   font-size: 18px;
+}
+.phone .icon-telegram {
+  width: 25px;
 }
 
 .phone a {
@@ -11700,6 +11703,16 @@ h3, .h3 {
 @media screen and (max-width: 767.98px) {
   .header {
     padding: 15px 0;
+  }
+
+
+  .logo img {
+    max-width: 190px;
+  }
+
+  .phone .icon-telegram {
+    width: 22px;
+    background-size: 100%;
   }
 
   .intro video {

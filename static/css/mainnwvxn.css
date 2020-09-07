@@ -11358,7 +11358,6 @@ h3, .h3 {
 }
 
 .intro {
-  max-height: 840px;
   overflow: hidden;
   position: relative;
 }

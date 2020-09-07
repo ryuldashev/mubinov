@@ -11696,6 +11696,10 @@ h3, .h3 {
   .header {
     padding: 15px 0;
   }
+
+  .intro video {
+    min-height: 50vh;
+  }
 }
 
 @media screen and (max-width: 575.98px) {

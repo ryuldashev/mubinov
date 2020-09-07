@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{{ page.title }}</title>
-        <meta content="{{ meta_description }}" name="description">
-        <meta content="{{ meta_keywords }}" name="keywords">
+        <meta content="{{ page.meta_description }}" name="description">
+        <meta content="{{ page.meta_keywords }}" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta content="telephone=no" name="format-detection">
@@ -19,15 +19,14 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-        <meta property="og:title" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
+        <meta property="og:title" content="{{ page.meta_title }}" />
+        <meta property="og:url" content="https://mubinovmovies.uz/" />
+        <meta property="og:description" content="{{ page.meta_description }}" />
+        <meta property="og:image" content="{{ page.meta_image }}" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="300" />
-        <meta property="twitter:description" content="" />
-        <link rel="image_src" href="" />
+        <meta property="og:image:width" content="960" />
+        <meta property="og:image:height" content="540" />
+        <link rel="image_src" href="{{ page.meta_image }}" />
 
         <link rel="icon" type="image/x-icon" href="/favicon.png">
         <script>

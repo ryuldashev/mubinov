@@ -1,9 +1,10 @@
 ---
 title: Damir Mubinov Movies
 phone: "+99897 740 42 23"
-meta_title: "Mubinov Movies | Video Production "
-meta_description: "Продакшн Студия  в Узбекистане. Мы делаем работающую видеорекламу рекламу и музыкальные клипы"
-meta_keywords: "видео, продакшн, видео-ролик, клип, узбекистан"
+meta_title: 'Mubinov Movies | Video Production '
+meta_description: Продакшн Студия  в Узбекистане. Мы делаем работающую видеорекламу
+  рекламу и музыкальные клипы
+meta_keywords: видео, продакшн, видео-ролик, клип, узбекистан
 meta_image: "/static/img/mubinovmovies.jpg"
 vimeo_link: https://t.me/damir_mubinov
 youtube_link: https://t.me/damir_mubinov

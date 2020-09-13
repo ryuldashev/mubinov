@@ -6,9 +6,9 @@ meta_description: Продакшн Студия  в Узбекистане. Мы
   и музыкальные клипы
 meta_keywords: видео, продакшн, видео-ролик, клип, узбекистан
 meta_image: "/static/img/mubinovmovies.png"
-vimeo_link: https://t.me/damir_mubinov
-youtube_link: https://t.me/damir_mubinov
-instagram_link: https://t.me/damir_mubinov
+vimeo_link: https://vimeo.com/mubinovmovies
+youtube_link: https://www.youtube.com/channel/UCVuYMzt30ZFhkJ_i0wBIrqQ
+instagram_link: https://www.instagram.com/mubinov.movies
 tg_link: https://t.me/damir_mubinov
 email: mubinovmovies@gmail.com
 main_title: Видеопродакшн в Узбекистане
@@ -19,6 +19,7 @@ objectives:
 - креативные
 - хорошие
 - продающие
+- сложные
 intro_header_right: видеоролики
 services_left:
 - Рекламные ролики

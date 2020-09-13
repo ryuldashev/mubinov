@@ -11715,7 +11715,7 @@ h3, .h3 {
   }
 
   .intro video {
-    min-height: 50vh;
+    min-height: auto;
   }
   .slider-item .content {
     width: 80%;

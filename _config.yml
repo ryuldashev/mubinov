@@ -20,9 +20,6 @@ description: Write an awesome description for your new site here. You can edit t
   results) and in your feed.xml site description.
 baseurl: ''
 url: ''
-#theme: minima
-#plugins:
-#- jekyll-feed
 exclude:
 - ".sass-cache/"
 - ".jekyll-cache/"

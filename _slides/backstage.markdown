@@ -1,7 +1,7 @@
 ---
-title: Backstage
+title: Это прекрасно
 date: 2020-09-06 06:19:00 Z
 image: "/uploads/slider-3-106351.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu mauris augue amet in. Sit risus nulla proin iaculis platea quam eget. Nec tempor, massa, sagittis augue malesuada a congue. Eget et ullamcorper nibh facilisis id arcu.
+Видео — вызывает эмоции и удерживает внимание зрителя. Для этого мы совмещаем сценарные техники, грамотно выставленный свет и тщательную цветокоррекцию. 

@@ -4,8 +4,7 @@ date: 2020-09-05 00:00:00 Z
 categories:
 - реклама
 case_link: 
-vimeo_link: https://vimeo.com/382049571
+vimeo_link: https://vimeo.com/455007604
 image: "/uploads/mirabad_cover.jpg"
 ---
 
-текстовое описание если вдруг хочется

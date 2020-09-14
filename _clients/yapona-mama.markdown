@@ -1,7 +1,7 @@
 ---
 title: Yapona Mama
 date: 2020-09-14 04:12:00 Z
-position: 2
+position: 3
 image: "/uploads/yaponamama_logo.png"
 ---
 

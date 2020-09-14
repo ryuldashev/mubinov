@@ -5,6 +5,7 @@ categories:
 - backstage
 case_link: https://readymag.com
 vimeo_link: https://vimeo.com/457626042
-image: "/uploads/video-1.jpg"
+image: "/uploads/mira_making_of.jpg"
 ---
 
+о том, как снимали проект для Mirabad Avenue

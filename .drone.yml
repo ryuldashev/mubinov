@@ -28,6 +28,7 @@ steps:
     PLUGIN_SRC_DIR: /_site
     PLUGIN_SECURE: false
     PLUGIN_VERIFY: false
+    PLUGIN_ONLY_NEWER: true
     PLUGIN_EXCLUDE: ^\.git/$
   when:
     branch:

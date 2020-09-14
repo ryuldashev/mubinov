@@ -245,7 +245,8 @@
                     {{ page.clients_title }}
                 </div>
                 <div class="row align-items-center">
-                    {% for client in site.clients %}
+                    {% assign clients = site.clients | sort: 'position' %}
+                    {% for client in clients %}
                         <div class="col-lg-3">
                             <div class="logo-item">
                                 <img src="{{ client.image }}" alt="{{ client.title }}">

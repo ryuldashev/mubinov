@@ -5,7 +5,7 @@ categories:
 - реклама
 case_link: 
 vimeo_link: https://vimeo.com/382049571
-image: "/uploads/video-1.jpg"
+image: "/uploads/mirabad_cover.jpg"
 ---
 
 текстовое описание если вдруг хочется

@@ -1,8 +1,8 @@
 ---
-title: Процесс
+title: Доносим идею
 date: 2020-09-06 06:18:00 Z
 image: "/uploads/slider-2.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu mauris augue amet in. Sit risus nulla proin iaculis platea quam eget. Nec tempor, massa, sagittis augue malesuada a congue. Eget et ullamcorper nibh facilisis id arcu.
-
+Нам важно, чтобы заказчик максимально понимал как будет выглядеть готовый видеоролик. 
+Мы доносим идею всеми возможными способами: подробный сценарий, раскадровки, аниматик, тестовая съемка.

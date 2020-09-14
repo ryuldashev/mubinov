@@ -14,7 +14,7 @@ steps:
   - bundle exec jekyll build
 
 - name: deploy
-  image: cschlosser/drone-ftps
+  image: coderockr/drone-ftps
   environment:
     FTP_USERNAME:
       from_secret: username

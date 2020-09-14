@@ -3,8 +3,9 @@ title: Mirabad Avenue — Commercial
 date: 2020-09-05 00:00:00 Z
 categories:
 - реклама
-case_link: 
+case_link: https://www.youtube.com/watch?v=tR0AL4dnU2I&t=1s
 vimeo_link: https://vimeo.com/455007604
 image: "/uploads/mirabad_cover.jpg"
+case_title: смотреть следующий ролик
 ---
 

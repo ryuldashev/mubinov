@@ -131,7 +131,7 @@
                             {{ slide.title }}
                         </div>
                         <div class="text">
-                            {{ slide.description }}
+                            {{ slide.content }}
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                                             {% endif %}
                                             {% if post.case_link %}
                                                 <div class="video-about-link">
-                                                    <a href="{{ post.case_link }}">о проекте</a>
+                                                    <a href="{{ post.case_link }}">{{ post.case_title|default:"о проекте" }}</a>
                                                 </div>
                                             {% endif %}
                                         </div>

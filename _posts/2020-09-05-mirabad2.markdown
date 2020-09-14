@@ -3,7 +3,6 @@ title: MAKING OF | Mirabad Avenue
 date: 2020-09-05 00:00:00 Z
 categories:
 - backstage
-case_link: https://readymag.com
 vimeo_link: https://vimeo.com/457626042
 image: "/uploads/mira_making_of.jpg"
 ---

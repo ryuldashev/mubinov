@@ -1,6 +1,10 @@
 kind: pipeline
 name: default
 
+trigger:
+  event:
+    exclude: [ promote ]
+
 steps:
 - name: build
   image: jekyll/jekyll:latest

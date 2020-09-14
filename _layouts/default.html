@@ -125,7 +125,7 @@
             
             {% assign slides = site.slides | sort: 'position' %}
             {% for slide in slides %}
-                <div class="slider-item w-100" style="background-image: url('{{ slide.image }}')">
+                <div class="slider-item w-100 {% if forloop.first %}active{% endif %}" style="background-image: url('{{ slide.image }}')">
                     <div class="content">
                         <div class="h3">
                             {{ slide.title }}

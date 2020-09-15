@@ -144,6 +144,11 @@
                     {{ page.contact_title }}
                 </div>
                 <div class="call-form">
+
+                    <div class="alert alert-success" role="alert" id="formresult" style="display: none;">
+
+                    </div>
+
                     <form action="/leadcontact.php" id="leadform">
                         <div class="d-lg-flex justify-content-center">
                             <div class="call-item">
@@ -311,6 +316,7 @@
         <script src="/static/js/mainnwvxn.js?2"></script>
         <script>
             document.getElementById('leadform').onsubmit = function (event) {
+                var form = this;
                 var data = {
                     name: document.querySelectorAll('input[name=name]')[0].value,
                     company: document.querySelectorAll('input[name=company]')[0].value,
@@ -327,6 +333,8 @@
                 }).then(function(result){
                     result = result.json();
                     console.log(result);
+                    var formResult = document.getElementById('formresult');
+                    formResult.style.display = 'block';
                 });
 
                 event.preventDefault();

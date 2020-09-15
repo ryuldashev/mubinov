@@ -3,8 +3,7 @@ title: Making Of | Mirabad Avenue
 date: 2020-09-05 00:00:00 Z
 categories:
 - backstage
-vimeo_link: https://vimeo.com/457626042
 image: "/uploads/mira_making_of.jpg"
+vimeo_link: https://vimeo.com/457626042
 ---
 
-о том, как снимали проект для Mirabad Avenue

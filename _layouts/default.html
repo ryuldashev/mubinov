@@ -321,19 +321,19 @@
                     company: document.querySelectorAll('input[name=company]')[0].value,
                     phone: document.querySelectorAll('input[name=phone]')[0].value
                 };
-                console.log(data)
                 fetch(this.getAttribute('action'), {
                     method: 'POST',
                     cache: 'no-cache',
                     headers: {
                         "Content-Type": "application/x-www-form-urlencoded"
                     },
-                    body: data
-                }).then(function(result){
-                    result = result.json();
-                    console.log(result);
+                    body: JSON.stringify(data)
+                }).then((response) => {
+                    return response.json();
+                }).then((data) => {
+                    console.log(data);
                     var formResult = document.getElementById('formresult');
-                    formResult.innerHTML = result['body'];
+                    formResult.innerHTML = data['body'];
                     formResult.style.display = 'block';
                 });
 

@@ -27,6 +27,7 @@ $result = json_decode(sendMessage($token, $chatid, $message));
 if(isset($result->ok) && $result->ok) {
     $response['body'] = $_POST['success_msg'];
 } elseif (!$result->ok) {
+    print_r($result);
     $response['error'] = true;
     $response['body'] = $result->error_code . ': ' . $result->description;
 } else {

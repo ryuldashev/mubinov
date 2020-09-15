@@ -328,9 +328,9 @@
                         "Content-Type": "application/x-www-form-urlencoded"
                     },
                     body: JSON.stringify(data)
-                }).then((response) => {
+                }).then(function(response) {
                     return response.json();
-                }).then((data) => {
+                }).then(function (data) {
                     console.log(data);
                     var formResult = document.getElementById('formresult');
                     formResult.innerHTML = data['body'];

@@ -144,20 +144,21 @@
                     {{ page.contact_title }}
                 </div>
                 <div class="call-form">
-                    <form>
+                    <form action="/leadcontact.php" id="leadform">
                         <div class="d-lg-flex justify-content-center">
                             <div class="call-item">
-                                <input class="call-item-name form-control form-control-lg" type="text" placeholder="имя">
+                                <input class="call-item-name form-control form-control-lg" type="text" name="name" placeholder="имя">
                             </div>
                             <div class="call-item">
-                                <input class="call-item-company form-control form-control-lg" type="text" placeholder="компания">
+                                <input class="call-item-company form-control form-control-lg" type="text" name="company" placeholder="компания">
                             </div>
                             <div class="call-item">
-                                <input class="call-item-phone form-control form-control-lg" type="text" placeholder="телефон/telegram">
+                                <input class="call-item-phone form-control form-control-lg" type="text" name="phone" placeholder="телефон/telegram">
                             </div>
                             <div class="call-item text-center">
                                 <button class="btn btn-danger btn-lg">отправить</button>
                             </div>
+                            <input type="hidden" name="success_msg" value="{{ page.form_success_msg }}">
                         </div>
                     </form>
                 </div>
@@ -301,8 +302,6 @@
             </div>
         </div>
 
-
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script>
             var Summaries = new Array();
             {% for objective in page.objectives %}
@@ -310,6 +309,29 @@
             {% endfor %}
         </script>
         <script src="/static/js/mainnwvxn.js?2"></script>
+        <script>
+            document.getElementById('leadform').onsubmit = function (event) {
+                var data = {
+                    name: document.querySelectorAll('input[name=name]')[0].value,
+                    company: document.querySelectorAll('input[name=company]')[0].value,
+                    phone: document.querySelectorAll('input[name=phone]')[0].value
+                };
+                console.log(data)
+                fetch(this.getAttribute('action'), {
+                    method: 'POST',
+                    cache: 'no-cache',
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: data
+                }).then(function(result){
+                    result = result.json();
+                    console.log(result);
+                });
+
+                event.preventDefault();
+            };
+        </script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 

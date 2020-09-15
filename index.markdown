@@ -36,6 +36,7 @@ contact_description: оставьте свои контакты, и мы про�
 showreel_url: https://player.vimeo.com/video/382049571
 works_title: НАШИ РАБОТЫ
 clients_title: Наши клиенты
+form_success_msg: Спасибо! Мы свяжемся с вами в ближайшее время
 layout: default
 ---
 

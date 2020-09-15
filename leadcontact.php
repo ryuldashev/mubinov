@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
+
 function sendMessage($token, $chatid, $message) {
     $url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chatid}&text=";
     $url .= urlencode($message);

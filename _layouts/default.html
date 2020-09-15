@@ -316,7 +316,6 @@
         <script src="/static/js/mainnwvxn.js?2"></script>
         <script>
             document.getElementById('leadform').onsubmit = function (event) {
-                var form = this;
                 var data = {
                     name: document.querySelectorAll('input[name=name]')[0].value,
                     company: document.querySelectorAll('input[name=company]')[0].value,
@@ -334,6 +333,7 @@
                     result = result.json();
                     console.log(result);
                     var formResult = document.getElementById('formresult');
+                    formResult.innerHTML = result['body'];
                     formResult.style.display = 'block';
                 });
 

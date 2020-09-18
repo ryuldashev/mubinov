@@ -1,5 +1,4 @@
 <?php
-ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
 
 function sendMessage($token, $chatid, $message) {
     $url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chatid}&text=";
@@ -16,10 +15,10 @@ function sendMessage($token, $chatid, $message) {
 }
 $token = '1380866539:AAGJ5_X4qUtyL51oJ8BE36UV1aP_bN6OeNg';
 $chatid = '-466208885';
-$message = '📳 Новая заявка на сайте \n' .
-            '\nИмя: ' . $_POST['name'] .
-            '\nКомпания: ' . $_POST['company'] .
-            '\nТелефон: ' . $_POST['phone'];
+$message = "📳 Новая заявка на сайте \n" .
+            "\nИмя: " . $_POST['name'] .
+            "\nКомпания: " . $_POST['company'] .
+            "\nТелефон: " . $_POST['phone'];
 $response;
 
 // now execute it:

@@ -11528,7 +11528,8 @@ h3, .h3 {
   max-width: 100%;
 }
 
-.video-title {
+.video-title,
+.video-title a {
   margin-bottom: 16px;
   font-size: 27px;
   font-weight: 700;

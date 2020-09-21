@@ -14,7 +14,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="/static/css/mainnwvxn.css?34" rel="stylesheet" type="text/css">
+        <link href="/static/css/mainnwvxn.css?35" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -206,7 +206,9 @@
                                         </div>
                                         <div class="video-info">
                                             <div class="video-title">
-                                                {{ post.title }}
+                                                <a data-fancybox data-ratio="2" href="{{ post.vimeo_link }}">
+                                                    {{ post.title }}
+                                                </a>
                                             </div>
                                             {% if post.content %}
                                             <div class="video-content">

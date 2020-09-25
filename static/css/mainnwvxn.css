@@ -11613,7 +11613,8 @@ h3, .h3 {
   .videos-intro {
     margin-bottom: 80px;
   }
-  .video-title {
+  .video-title,
+  .video-title a {
     font-size: 18px;
     margin-bottom: 0;
   }
@@ -11719,9 +11720,18 @@ h3, .h3 {
   .intro video {
     min-height: auto;
   }
+  .slider, .slider-item {
+    height: 75vw;
+  }
+  .slider-item {
+    background-position: 50% 1%;
+  }
   .slider-item .content {
-    width: 80%;
+    width: auto;
     bottom: 1em;
+    left: 3em;
+    right: 3em;
+    text-align: center;
   }
   .slider .text {
     font-size: 11px;
@@ -11764,7 +11774,8 @@ h3, .h3 {
   .video-box {
     margin-bottom: 40px;
   }
-  .video-title {
+  .video-title,
+  .video-title a {
     font-size: 14px;
   }
   .video-about-link {

@@ -14,7 +14,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="/static/css/mainnwvxn.css?35" rel="stylesheet" type="text/css">
+        <link href="/static/css/mainnwvxn.css?36" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -127,7 +127,18 @@
             
             {% assign slides = site.slides | sort: 'position' %}
             {% for slide in slides %}
-                <div class="slider-item w-100 {% if forloop.first %}active{% endif %}" style="background-image: url('{{ slide.image }}')">
+                <div class="slider-item w-100 slider-item{{ forloop.index }} {% if forloop.first %}active{% endif %}">
+                    <style>
+                        .slider-item{{ forloop.index }} {
+                            background-image: url('{{ slide.image }}');
+                        }
+
+                        @media(max-width: 767.98px) {
+                            .slider-item{{ forloop.index }} {
+                            background-image: url('{{ slide.image_mobile }}');
+                        }
+                        }
+                    </style>
                     <div class="content">
                         <div class="h3">
                             {{ slide.title }}

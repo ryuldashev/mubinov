@@ -11226,6 +11226,10 @@ h3, .h3 {
   color: #fff;
 }
 
+.footer-phone {
+  margin-top: 20px;
+}
+
 .footer-phone a {
     color: #fff;
     font-size: 46px;
@@ -11704,6 +11708,10 @@ h3, .h3 {
   }
   .footer-logo {
     margin: 0 0 20px 0;
+  }
+  .footer-phone a {
+    font-size: 35px;
+    line-height: 42px;
   }
   .footer-col {
     margin-bottom: 30px;

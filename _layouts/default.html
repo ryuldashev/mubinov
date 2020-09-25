@@ -253,7 +253,9 @@
                     {% for client in clients %}
                         <div class="col-lg-3">
                             <div class="logo-item">
+                                {% if client.link %}<a href="{{ client.link }}" rel="nofollow">{% endif %}
                                 <img src="{{ client.image }}" alt="{{ client.title }}">
+                                {% if client.link %}</a>{% endif %}
                             </div>
                         </div>
                     {% endfor %}

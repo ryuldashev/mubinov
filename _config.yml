@@ -28,6 +28,7 @@ defaults:
     type: clients
   values:
     image: ''
+    link: ''
 - scope:
     path: ''
     type: slides

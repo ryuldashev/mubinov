@@ -6179,7 +6179,6 @@ $(document).ready(function () {
     });
 
     function changeSlide(index) {
-        console.log(index);
         $('.slider-item.active').addClass('blackout');
         setTimeout(function(){
             $('.slider-item.active').removeClass('active').removeClass('blackout');
@@ -6189,10 +6188,8 @@ $(document).ready(function () {
 
     $('.slide-next').click(function(e) {
         var index = $('.slider-item').index($('.slider-item').first());
-        console.log(111, index);
         if ($('.slider-item.active').next().length) {
             index = $('.slider-item').index($('.slider-item.active').next());
-            console.log(222, index);
         }
         changeSlide(index);
     });
@@ -6204,6 +6201,8 @@ $(document).ready(function () {
         }
         changeSlide(index);
     });
+
+    setInterval(function(){ $('.slide-next').click() }, 12000);
 
     function ticker() {
         var CharTimeout = 50; // скорость печатания

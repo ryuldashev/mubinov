@@ -264,62 +264,24 @@
         </div>
         <div class="footer">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="footer-logo">
-                            <img src="/static/img/general/logo-white.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-col">
-                            <div class="footer-col-title">
-                                навигация
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#call" class="scroll-link">Связаться</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio" class="scroll-link">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="#clients" class="scroll-link">Клиенты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-col">
-                            <div class="footer-col-title">
-                                Социальные сети
-                            </div>
+                <div class="footer-phone">
+                    <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
+                </div>
+                <div class="footer-tel">
+                    (calls / telegram / whatsapp)
+                </div>
 
-                            <ul class="social-links">
-                                <li><a href="{{ page.vimeo_link }}" class="icon-social icon-vimeo"></a></li>
-                                <li><a href="{{ page.youtube_link }}" class="icon-social icon-youtube"></a></li>
-                                <li><a href="{{ page.instagram_link }}" class="icon-social icon-instagram"></a></li>
-                                <li><a href="{{ page.tg_link }}" class="icon-social icon-telegram"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-col">
-                            <div class="footer-col-title">
-                                Контакты
-                            </div>
+                <div class="footer-email">
+                    <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+                </div>
 
-                            <div class="footer-email">
-                                <a href="mailto:{{ page.email }}">{{ page.email }}</a>
-                            </div>
-
-                            <div class="footer-tel">
-                                <div>
-                                    <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
-                                </div>
-                                (calls / telegram / whatsapp)
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-col">
+                    <ul class="social-links">
+                        <li><a href="{{ page.vimeo_link }}" class="icon-social icon-vimeo"></a></li>
+                        <li><a href="{{ page.youtube_link }}" class="icon-social icon-youtube"></a></li>
+                        <li><a href="{{ page.instagram_link }}" class="icon-social icon-instagram"></a></li>
+                        <li><a href="{{ page.tg_link }}" class="icon-social icon-telegram"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>

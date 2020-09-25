@@ -20,22 +20,22 @@ defaults:
     type: posts
   values:
     image: ''
-    vimeo_link:
-    case_link:
-    case_title:
+    vimeo_link: 
+    case_link: 
+    case_title: 
 - scope:
     path: ''
     type: clients
   values:
-    image:
-    link:
+    image: 
+    link: 
 - scope:
     path: ''
     type: slides
   values:
-    image:
-    image_mobile:
-    vimeo_link:
+    image: 
+    image_mobile: 
+    vimeo_link: 
 - scope:
     path: ''
   values:

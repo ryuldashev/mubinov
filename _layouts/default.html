@@ -10,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta content="telephone=no" name="format-detection">
-        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
@@ -45,7 +44,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-3 col-auto mr-auto">
                         <div class="logo">
-                            <img src="/static/img/general/logo-white.png" alt="">
+                            <a href="/">
+                                <img src="/static/img/general/logo-white.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 d-none d-lg-block">
@@ -267,6 +268,7 @@
         </div>
     {% endif %}
 
+    {% if page.permalink == null %}
         <div class="logos" id="clients">
             <div class="container">
                 <div class="h2 logos-title text-center">
@@ -286,10 +288,15 @@
                 </div>
             </div>
         </div>
+    {% endif %}
 
         <div class="footer">
             <div class="container-fluid">
                 <div class="footer-links">
+
+                    {% if page.permalink == null %}
+                        <a href="/">Главная</a>
+                    {% endif %}
                     {% assign pages = site.pages | where_exp: "item", "item.permalink != null" %}
                     {% assign pages = pages | where_exp: "item", "item.permalink != '/404.html'" %}
                     {% for cpage in pages %}

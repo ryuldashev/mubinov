@@ -1,6 +1,5 @@
 ---
 title: Damir Mubinov Movies
-
 intro_header_left: Мы делаем
 objectives:
 - эффективные
@@ -18,7 +17,6 @@ services_right:
 - Презентационные фильмы
 - Обучающий контент
 - Production service
-
 layout: default
 ---
 

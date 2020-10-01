@@ -6267,7 +6267,10 @@ $(document).ready(function () {
         startTicker();
     }
 
-    ticker();
+    if (document.getElementById("introTitleSlider")) {
+        ticker();
+    }
+
 
 });
 

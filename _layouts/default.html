@@ -13,7 +13,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="/static/css/mainnwvxn.css?44" rel="stylesheet" type="text/css">
+        <link href="/static/css/mainnwvxn.css?45" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -31,7 +31,7 @@
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
-        
+
         <script src="//code-ya.jivosite.com/widget/xsHoUIDOuY" async></script>
 
     </head>
@@ -98,6 +98,14 @@
             </video>
         </div>
     {% else %}
+        {% if page.vimeo_link %}
+            <div class="intro intro-work">
+                <iframe class="video" src="https://player.vimeo.com/video/{{ page.vimeo_link|replace:'https://vimeo.com/', '' }}?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                        width="100%" allow="autoplay; fullscreen" frameborder="0" ></iframe>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        {% endif %}
+
         <div class="content-block">
             <div class="container">
                 <div class="content-title h2 text-center">
@@ -146,7 +154,7 @@
         <div class="slider d-flex">
             <span class="slide-prev"></span>
             <span class="slide-next"></span>
-            
+
             {% assign slides = site.slides | sort: 'position' %}
             {% for slide in slides %}
                 <div class="slider-item w-100 slider-item{{ forloop.index }} {% if forloop.first %}active{% endif %}">

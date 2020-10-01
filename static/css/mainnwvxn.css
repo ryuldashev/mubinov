@@ -11392,12 +11392,18 @@ h3, .h3 {
   background: rgba(0, 0, 0, 0.5);
   z-index: 15;
 }
+.intro-work:before {
+  display: none;
+}
 
-.intro video {
-  pointer-events: none;
+.intro video,
+.intro .video {
   display: block;
   min-height: 100vh;
   background: black;
+}
+.intro video {
+  pointer-events: none;
 }
 
 .intro-content {
@@ -11537,6 +11543,10 @@ h3, .h3 {
   height: 641px;
   margin: 0 auto;
   margin-top: -150px;
+}
+
+.content-block .videos-intro iframe {
+  margin-top: 0;
 }
 
 .content-title {
@@ -11768,7 +11778,8 @@ h3, .h3 {
     background-size: 100%;
   }
 
-  .intro video {
+  .intro video,
+  .intro .video {
     min-height: auto;
   }
   .slider, .slider-item {

@@ -1,6 +1,6 @@
 ---
 title: Damir Mubinov Movies
-timezone: UTC
+timezone: Asia/Tashkent
 collections:
   clients:
     title: Clients
@@ -61,8 +61,8 @@ works_title: НАШИ РАБОТЫ
 clients_title: Наши клиенты
 form_success_msg: Спасибо! Мы свяжемся с вами в ближайшее время
 description: Mubinov Movies
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 exclude:
 - ".sass-cache/"
 - ".jekyll-cache/"

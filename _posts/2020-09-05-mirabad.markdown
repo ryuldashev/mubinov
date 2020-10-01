@@ -1,7 +1,7 @@
 ---
 title: Mirabad Avenue — Commercial
-date: 2020-09-05 00:00:00 Z
-permalink: /works/mirabad/
+date: 2020-09-05 05:00:00 +05:00
+permalink: "/works/mirabad/"
 categories:
 - реклама
 case_link: https://www.youtube.com/watch?v=tR0AL4dnU2I&t=1s

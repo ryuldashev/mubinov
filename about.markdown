@@ -5,4 +5,4 @@ permalink: "/about/"
 layout: default
 ---
 
-asdfasdfasdfasfd
+Текст о компании подробный.

@@ -11204,9 +11204,20 @@ h3, .h3 {
 }
 
 .footer {
-  padding: 80px 0 40px;
+  padding: 30px 0 40px;
   background: #2B2B2B;
   text-align: center;
+}
+
+.footer-links {
+  padding-bottom: 50px;
+}
+
+.footer-links a {
+  color: #969696;
+}
+.footer-links a.active {
+  font-weight: bold;
 }
 
 .footer-logo {
@@ -11507,6 +11518,12 @@ h3, .h3 {
   background-color: #131313;
 }
 
+.content {
+  padding-top: 200px;
+  background: url(../img/general/videos-bg.png) no-repeat center top;
+  background-color: #131313;
+}
+
 .videos-intro {
   margin-bottom: 120px;
   text-align: center;
@@ -11518,6 +11535,11 @@ h3, .h3 {
   height: 641px;
   margin: 0 auto;
   margin-top: -150px;
+}
+
+.content-title {
+  margin-bottom: 92px;
+  color: #DCDCDC;
 }
 
 .videos-title {
@@ -11590,6 +11612,11 @@ h3, .h3 {
 
 .logo-item img {
   max-width: 100%;
+}
+
+.content-section {
+  color: #fff;
+  padding: 0 0 40px 0;
 }
 
 @media screen and (max-width: 1199.98px) {

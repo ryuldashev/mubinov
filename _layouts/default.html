@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{{ page.title }}</title>
-        <meta content="{{ page.meta_description }}" name="description">
-        <meta content="{{ page.meta_keywords }}" name="keywords">
+        <meta content="{{ site.meta_description }}" name="description">
+        <meta content="{{ site.meta_keywords }}" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta content="telephone=no" name="format-detection">
@@ -19,14 +19,14 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-        <meta property="og:title" content="{{ page.meta_title }}" />
+        <meta property="og:title" content="{{ site.meta_title }}" />
         <meta property="og:url" content="https://mubinovmovies.uz/" />
-        <meta property="og:description" content="{{ page.meta_description }}" />
-        <meta property="og:image" content="{{ page.meta_image }}" />
+        <meta property="og:description" content="{{ site.meta_description }}" />
+        <meta property="og:image" content="{{ site.meta_image }}" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="960" />
         <meta property="og:image:height" content="540" />
-        <link rel="image_src" href="{{ page.meta_image }}" />
+        <link rel="image_src" href="{{ site.meta_image }}" />
 
         <link rel="icon" type="image/x-icon" href="/favicon.png">
         <script>
@@ -55,7 +55,11 @@
                                     <a href="#call" class="nav-link scroll-link">Связаться</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#portfolio" class="nav-link scroll-link">Портфолио</a>
+                                    {% if page.permalink == null %}
+                                        <a href="#portfolio" class="nav-link scroll-link">Портфолио</a>
+                                    {% else %}
+                                        <a href="/#portfolio" class="nav-link">Портфолио</a>
+                                    {% endif %}
                                 </li>
                                 <li>
                                     <a href="#clients" class="nav-link scroll-link">Клиенты</a>
@@ -65,14 +69,14 @@
                     </div>
                     <div class="col-lg-3 col-auto">
                         <div class="phone text-right">
-                            <a href="{{ page.tg_link }}"><i class="icon-social icon-telegram mr-2"></i></a>
+                            <a href="{{ site.tg_link }}"><i class="icon-social icon-telegram mr-2"></i></a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-
+    {% if page.permalink == null %}
         <div class="intro">
             <div class="intro-content d-flex align-items-center">
                 <div class="w-100">
@@ -92,15 +96,32 @@
                 <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
             </video>
         </div>
+    {% else %}
+        <div class="content">
+            <div class="container">
+                <div class="content-title h2 text-center">
+                    {{ page.title }}
+                </div>
 
+                <div class="content-section">
+                    <div class="row">
+                        {{ content }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    {% endif %}
+
+    {% if page.permalink == null %}
         <div class="services d-flex align-items-center">
             <div class="w-100">
                 <div class="container">
                     <div class="h2 text-center">
-                        {{ page.main_title }}
+                        {{ site.main_title }}
                     </div>
                     <div class="services-title h5 text-center">
-                        {{ page.main_sub_title }}
+                        {{ site.main_sub_title }}
                     </div>
 
                     <div class="services-text">
@@ -120,7 +141,9 @@
                 </div>
             </div>
         </div>
+    {% endif %}
 
+    {% if page.permalink == null %}
         <div class="slider d-flex">
             <span class="slide-prev"></span>
             <span class="slide-next"></span>
@@ -150,11 +173,12 @@
                 </div>
             {% endfor %}
         </div>
+    {% endif %}
 
         <div class="call" id="call">
             <div class="container">
                 <div class="call-title h2 text-center">
-                    {{ page.contact_title }}
+                    {{ site.contact_title }}
                 </div>
                 <div class="call-form">
 
@@ -176,29 +200,30 @@
                             <div class="call-item text-center">
                                 <button class="btn btn-danger btn-lg">отправить</button>
                             </div>
-                            <input type="hidden" name="success_msg" value="{{ page.form_success_msg }}">
+                            <input type="hidden" name="success_msg" value="{{ site.form_success_msg }}">
                         </div>
                     </form>
                 </div>
 
                 <div class="call-text">
-                    {{ page.contact_description }}
+                    {{ site.contact_description }}
                 </div>
 
                 <div class="call-text call-link">
-                    <a href="{{ page.tg_link }}">Написать в Telegram</a>
+                    <a href="{{ site.tg_link }}">Написать в Telegram</a>
                 </div>
             </div>
         </div>
 
+    {% if page.permalink == null %}
         <div class="videos" id="portfolio">
             <div class="container">
                 <div class="videos-intro">
-                    <iframe src="{{ page.showreel_url }}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="{{ site.showreel_url }}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
 
                 <div class="videos-title h2 text-center">
-                    {{ page.works_title }}
+                    {{ site.works_title }}
                 </div>
 
                 {% for category in site.categories %}
@@ -242,11 +267,12 @@
                 {% endfor %}
             </div>
         </div>
+    {% endif %}
 
         <div class="logos" id="clients">
             <div class="container">
                 <div class="h2 logos-title text-center">
-                    {{ page.clients_title }}
+                    {{ site.clients_title }}
                 </div>
                 <div class="row align-items-center">
                     {% assign clients = site.clients | sort: 'position' %}
@@ -262,25 +288,34 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="container-fluid">
+                <div class="footer-links">
+                    {% assign pages = site.pages | where_exp: "item", "item.permalink != null" %}
+                    {% assign pages = pages | where_exp: "item", "item.permalink != '/404.html'" %}
+                    {% for cpage in pages %}
+                        <a href="{{ cpage.permalink }}" {% if cpage.permalink == page.permalink %}class="active"{% endif %}>{{ cpage.title }}</a>
+                    {% endfor %}
+                </div>
+
                 <div class="footer-phone">
-                    <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
+                    <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
                 </div>
                 <div class="footer-tel">
                     (calls / telegram / whatsapp)
                 </div>
 
                 <div class="footer-email">
-                    <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </div>
 
                 <div class="footer-col">
                     <ul class="social-links">
-                        <li><a href="{{ page.vimeo_link }}" class="icon-social icon-vimeo"></a></li>
-                        <li><a href="{{ page.youtube_link }}" class="icon-social icon-youtube"></a></li>
-                        <li><a href="{{ page.instagram_link }}" class="icon-social icon-instagram"></a></li>
-                        <li><a href="{{ page.tg_link }}" class="icon-social icon-telegram"></a></li>
+                        <li><a href="{{ site.vimeo_link }}" class="icon-social icon-vimeo"></a></li>
+                        <li><a href="{{ site.youtube_link }}" class="icon-social icon-youtube"></a></li>
+                        <li><a href="{{ site.instagram_link }}" class="icon-social icon-instagram"></a></li>
+                        <li><a href="{{ site.tg_link }}" class="icon-social icon-telegram"></a></li>
                     </ul>
                 </div>
             </div>

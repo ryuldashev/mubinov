@@ -11618,6 +11618,9 @@ h3, .h3 {
   color: #fff;
   padding: 0 0 40px 0;
 }
+.content-section img {
+  max-width: 100%;
+}
 
 @media screen and (max-width: 1199.98px) {
   h2, .h2 {

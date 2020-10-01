@@ -1,5 +1,5 @@
 ---
-title: Портфолио
+title: Все работы
 date: 2020-09-13 19:47:00 +05:00
 permalink: "/works/"
 layout: default

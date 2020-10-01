@@ -13,7 +13,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="/static/css/mainnwvxn.css?42" rel="stylesheet" type="text/css">
+        <link href="/static/css/mainnwvxn.css?43" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -294,7 +294,7 @@
             <div class="container-fluid">
                 <div class="footer-links">
 
-                    {% if page.permalink == null %}
+                    {% if page.permalink != null %}
                         <a href="/">Главная</a>
                     {% endif %}
                     {% assign pages = site.pages | where_exp: "item", "item.permalink != null" %}

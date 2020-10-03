@@ -4,9 +4,10 @@ date: 2020-09-05 05:00:00 +05:00
 permalink: "/works/mirabad/"
 categories:
 - реклама
-case_link: https://www.youtube.com/watch?v=tR0AL4dnU2I&t=1s
-vimeo_link: https://vimeo.com/455007604
 image: "/uploads/mirabad_cover.jpg"
+vimeo_link: https://vimeo.com/455007604
+case_link: https://www.youtube.com/watch?v=tR0AL4dnU2I&t=1s
 case_title: смотреть следующий ролик
 ---
 
+Серия рекламных роликов для резиденции премиум класса Mirabad Avenue

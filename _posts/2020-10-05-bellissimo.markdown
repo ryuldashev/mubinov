@@ -1,7 +1,7 @@
 ---
 title: Bellissimo Pizza
 date: 2020-10-05 21:07:00 +05:00
-permalink: "/works/bellissimo"
+permalink: "/works/bellissimo/"
 categories:
 - Food
 image: "/uploads/bellisimo.jpg"

@@ -22,7 +22,7 @@ defaults:
     image: ''
     vimeo_link: 
     case_link: 
-    case_title:
+    case_title: 
     is_mainpage: true
 - scope:
     path: ''

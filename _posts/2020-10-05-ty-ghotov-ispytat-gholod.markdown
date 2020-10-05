@@ -6,6 +6,6 @@ categories:
 - Food
 image: "/uploads/koreana.jpg"
 vimeo_link: https://vimeo.com/342421761
-is_mainpage: true
+is_mainpage: false
 ---
 

@@ -8,5 +8,6 @@ image: "/uploads/mirabad_cover.jpg"
 vimeo_link: https://vimeo.com/455007604
 case_link: https://www.youtube.com/watch?v=tR0AL4dnU2I&t=1s
 case_title: смотреть следующий ролик
+is_mainpage: true
 ---
 

@@ -9,5 +9,6 @@ tags:
 - production
 image: "/uploads/ym_cover.jpg"
 vimeo_link: https://vimeo.com/340846519
+is_mainpage: true
 ---
 

@@ -5,5 +5,6 @@ categories:
 - backstage
 image: "/uploads/tuborg_mo.jpg"
 vimeo_link: https://youtu.be/LElZH9p96uM
+is_mainpage: true
 ---
 

@@ -5,5 +5,6 @@ categories:
 - фильмы
 image: "/uploads/ym_story.jpg"
 vimeo_link: https://www.youtube.com/watch?v=jWl_ejanwl8
+is_mainpage: true
 ---
 

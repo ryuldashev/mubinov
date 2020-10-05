@@ -11526,6 +11526,10 @@ h3, .h3 {
   background-color: #131313;
 }
 
+.videos-section .h3 {
+  margin-bottom: 1em;
+}
+
 .content-block {
   padding-top: 200px;
   background: url(../img/general/videos-bg.png) no-repeat center top;

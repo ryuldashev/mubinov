@@ -1,6 +1,7 @@
 ---
 title: Клиенту комфортно
-date: 2020-09-06 06:06:00 Z
+date: 2020-09-06 11:06:00 +05:00
+position: 1
 image: "/uploads/slider-1.jpg"
 image_mobile: "/uploads/slider-1-mobile.jpg"
 ---

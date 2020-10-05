@@ -1,6 +1,7 @@
 ---
 title: Это прекрасно
 date: 2020-09-06 11:19:00 +05:00
+position: 2
 image: "/uploads/slider-3-106351.jpg"
 image_mobile: "/uploads/slider-3-mobile.jpg"
 ---

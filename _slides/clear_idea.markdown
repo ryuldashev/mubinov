@@ -1,6 +1,7 @@
 ---
 title: Доносим идею
-date: 2020-09-06 06:18:00 Z
+date: 2020-09-06 11:18:00 +05:00
+position: 0
 image: "/uploads/slider-2.jpg"
 image_mobile: "/uploads/slider-2-mobile.jpg"
 ---

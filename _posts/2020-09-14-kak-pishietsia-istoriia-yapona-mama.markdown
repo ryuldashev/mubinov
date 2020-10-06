@@ -1,6 +1,7 @@
 ---
 title: Как пишется история – Yapona Mama
 date: 2020-09-14 18:31:00 +05:00
+permalink: "/works/yapona_story/"
 categories:
 - фильмы
 image: "/uploads/ym_story.jpg"

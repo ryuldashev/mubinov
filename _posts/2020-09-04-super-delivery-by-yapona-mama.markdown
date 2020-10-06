@@ -1,6 +1,7 @@
 ---
 title: Super Delivery by Yapona Mama
 date: 2020-09-04 18:23:00 +05:00
+permalink: "/works/yaponamama_delivery/"
 categories:
 - реклама
 tags:

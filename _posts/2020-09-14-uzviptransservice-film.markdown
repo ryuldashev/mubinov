@@ -1,6 +1,7 @@
 ---
 title: UzVipTransService – Film
 date: 2020-09-14 18:38:00 +05:00
+permalink: "/works/uzviptrans/"
 categories:
 - фильмы
 vimeo_link: https://vimeo.com/406650444

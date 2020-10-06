@@ -9,10 +9,6 @@ layout: default
     <iframe src="{{ site.showreel_url }}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
-<div class="videos-title h2 text-center">
-    {{ site.works_title }}
-</div>
-
 {% for category in site.categories %}
 {% assign category_object = category[0] %}
 

@@ -1,7 +1,7 @@
 ---
 title: Ты готов испытать голод?
 date: 2020-10-05 20:40:00 +05:00
-permalink: "/works/koreana"
+permalink: "/works/koreana/"
 categories:
 - Food
 image: "/uploads/koreana.jpg"

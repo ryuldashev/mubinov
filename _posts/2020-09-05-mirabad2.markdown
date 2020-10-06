@@ -1,6 +1,7 @@
 ---
 title: Making Of | Mirabad Avenue
 date: 2020-09-05 05:00:00 +05:00
+permalink: "/works/mirabad_makings/"
 categories:
 - backstage
 image: "/uploads/mira_making_of.jpg"

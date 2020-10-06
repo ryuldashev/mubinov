@@ -11786,6 +11786,22 @@ h3, .h3 {
   .intro .video {
     min-height: auto;
   }
+  .intro-work .video {
+    padding-top: 80px;
+    min-height: 75vw;
+  }
+  .empty-intro {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    background-color: #000;
+  }
+  .content-block {
+    padding-top: 2em;
+  }
+  .content-title {
+    margin-bottom: 1.5em;
+  }
   .slider, .slider-item {
     height: 75vw;
   }

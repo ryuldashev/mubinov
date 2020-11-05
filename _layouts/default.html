@@ -326,7 +326,9 @@
                     {% assign pages = site.pages | where_exp: "item", "item.permalink != null" %}
                     {% assign pages = pages | where_exp: "item", "item.permalink != '/404.html'" %}
                     {% for cpage in pages %}
-                        <a href="{{ cpage.permalink }}" {% if cpage.permalink == page.permalink %}class="active"{% endif %}>{{ cpage.title }}</a>
+                        {% if cpage.is_show_link %}
+                            <a href="{{ cpage.permalink }}" {% if cpage.permalink == page.permalink %}class="active"{% endif %}>{{ cpage.title }}</a>
+                        {% endif %}
                     {% endfor %}
                 </div>
 

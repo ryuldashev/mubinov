@@ -3,6 +3,7 @@ title: Все работы
 date: 2020-09-13 19:47:00 +05:00
 permalink: "/works/"
 layout: default
+is_show_link: true
 ---
 
 <div class="videos-intro">
@@ -30,7 +31,6 @@ layout: default
                         <a data-fancybox data-ratio="2" href="{{ post.vimeo_link }}">
                             {{ post.title }}
                         </a>
-                        <a href="{{ post.url }}">&</a>
                     </div>
                     {% if post.content %}
                     <div class="video-content">

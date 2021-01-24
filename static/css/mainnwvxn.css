@@ -11170,11 +11170,14 @@ h2, .h2 {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+
 }
 
 h3, .h3 {
   font-size: 30px;
   text-transform: uppercase;
+  font-family: 'Merriweather', serif;
 }
 
 .form-control {
@@ -11422,6 +11425,7 @@ h3, .h3 {
 
 .intro-title {
   white-space: nowrap;
+  font-family: 'Merriweather', serif;
 }
 
 .intro-title-slider {
@@ -11810,13 +11814,21 @@ h3, .h3 {
   }
   .slider-item .content {
     width: auto;
-    bottom: 1em;
-    left: 3em;
-    right: 3em;
+    bottom: 0.8em;
+    left: 0.8em;
+    right: 0.8em;
     text-align: center;
   }
   .slider .text {
-    font-size: 11px;
+    font-size: 13px;
+  }
+  .slider .text p {
+    margin-bottom: 0;
+  }
+
+  .slide-prev,
+  .slide-next {
+    top: calc(42% - 20px);
   }
 
   .call-text {
@@ -11836,13 +11848,13 @@ h3, .h3 {
 
 @media screen and (max-width: 575.98px) {
   h2, .h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
   h3, .h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
   h5, .h5 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .call-title {
     margin-bottom: 20px;

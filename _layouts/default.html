@@ -159,7 +159,7 @@
         </div>
     {% endif %}
 
-    {% if page.permalink == null %}
+    {% if page.permalink == null and page.is_show_slider %}
         <div class="slider d-flex">
             <span class="slide-prev"></span>
             <span class="slide-next"></span>

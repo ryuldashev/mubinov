@@ -17,6 +17,7 @@ services_right:
 - Презентационные фильмы
 - Обучающий контент
 - Production service
+is_show_slider: false
 layout: default
 ---
 

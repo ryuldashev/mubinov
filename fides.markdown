@@ -1,6 +1,7 @@
 ---
 title: No Stress by Fides
 date: 2021-03-16 14:28:00 +05:00
+permalink: "/fides"
 ---
 
 <iframe src="https://player.vimeo.com/video/518058425" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

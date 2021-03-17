@@ -9,8 +9,8 @@ tags:
 - ташкент
 image: "/uploads/Instagram%20story%20-%201.jpg"
 vimeo_link: https://vimeo.com/517823945
-case_link: официальный сайт компании
-case_title: https://mobi.uz/ru/
+case_link: https://mobi.uz/ru/
+case_title: официальный сайт компании
 is_mainpage: true
 ---
 

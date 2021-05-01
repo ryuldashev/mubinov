@@ -1,6 +1,6 @@
 ---
 title: UzCarlsberg
-position: 3
+position: 9
 image: "/uploads/UzCarlsberg%20logo.png"
 ---
 

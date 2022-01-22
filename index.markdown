@@ -1,5 +1,5 @@
 ---
-title: Damir Mubinov Movies
+title: SNOVA Production
 intro_header_left: Мы делаем
 objectives:
 - эффективные

@@ -42,11 +42,11 @@ defaults:
   values:
     layout: default
 phone: "+99897 740 42 23"
-meta_title: Mubinov Movies | Video Production
-meta_description: Продакшн Студия  в Узбекистане. Мы делаем работающую видеорекламу
-  и музыкальные клипы
-meta_keywords: видео, продакшн, видео-ролик, клип, узбекистан
-meta_image: "/static/img/mubinovmovies.png"
+meta_title: SNOVA| Video Production
+meta_description: ПродакшнСтудия в Узбекистане. Создаём видеоролики согласно вашим
+  ожиданиям
+meta_keywords: видео, продакшн, видео-ролик, клип, узбекистан, snova production, snova
+meta_image: "/uploads/tg_cover.png"
 vimeo_link: https://vimeo.com/snovavideo
 youtube_link: https://www.youtube.com/channel/UCVuYMzt30ZFhkJ_i0wBIrqQ
 instagram_link: https://www.instagram.com/snova.video
@@ -57,7 +57,7 @@ main_sub_title: Решаем бизнес-задачи с помощью вид�
 contact_title: Cвяжемся с вами
 contact_description: оставьте свои контакты, и мы проконсультируем вас в удобной для
   вас форме
-showreel_url: https://player.vimeo.com/video/382049571
+showreel_url: https://vimeo.com/666008421
 works_title: НАШИ РАБОТЫ
 clients_title: Наши клиенты
 form_success_msg: Спасибо! Мы свяжемся с вами в ближайшее время
